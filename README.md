@@ -1,5 +1,3 @@
-# cs389s2021team5
-
 **Mixology Mania**
 
 **Team 5** 
