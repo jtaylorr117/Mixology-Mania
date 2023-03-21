@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/yellow_bg"
+        tools:context=".home_screen"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/title_top"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:contentDescription="@string/title_at_top"
+                android:src="@drawable/title_text_only" />
+
+        </RelativeLayout>
+
+        <!-- grid starts -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mainGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+          >
+            <!--   android:columnOrderPreserved="false" -->
+
+            <!-- 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_play"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#e5f5dc"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription="@string/green_bottle"
+                        android:src="@drawable/smaller_green_bottle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/play"
+                        android:textColor="@color/green_color_1"
+                        android:textSize="18sp" />
+
+                    <!--
+                    <Button
+                        android:id="@+id/play_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:backgroundTint="#e5f5dc"
+                        android:text="@string/play"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"> </Button>
+-->
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_recipes"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#e5f5dc"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/card_help"
+                app:layout_constraintEnd_toStartOf="@+id/card_settings"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_play">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription="@string/stack_of_olives"
+                        android:src="@drawable/olives" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/recipes"
+                        android:textColor="@color/green_color_1"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- 3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_settings"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#e5f5dc"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/card_about"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/card_recipes"
+                app:layout_constraintTop_toBottomOf="@+id/card_play">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription="@string/salt_shaker"
+                        android:src="@drawable/salt_shaker" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/settings"
+                        android:textColor="@color/green_color_1"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- 4 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_help"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#e5f5dc"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/card_about"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_recipes">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription="@string/glass_of_wine"
+                        android:src="@drawable/wine_glass" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/help"
+                        android:textColor="@color/green_color_1"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- 5 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_about"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#e5f5dc"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/card_help"
+                app:layout_constraintTop_toBottomOf="@+id/card_settings">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription="@string/martini_shaker"
+                        android:src="@drawable/shaker" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/about_us"
+                        android:textColor="@color/green_color_1"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- 6
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#e5f5dc"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/blue_bottle" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mixologymania.help_screen"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/contact_form_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/need_help"
+        android:textColor="@color/green_color_1"
+        android:textSize="40sp"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/enter_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green_color_2"
+        android:hint="@string/name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/enter_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/green_color_2"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/enter_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green_color_2"
+        android:hint="@string/phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/enter_message"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/green_color_2"
+        android:gravity="start|top"
+        android:hint="@string/your_message"
+        android:fitsSystemWindows="true"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:padding="5dp" />
+    <!-- android:breakStrategy="balanced" -->
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/green_color_2"
+        android:elevation="4dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:text="@string/submit"
+        android:textColor="@color/green_color_1" />
+</LinearLayout>

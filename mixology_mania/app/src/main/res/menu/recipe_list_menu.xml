@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/filter"
+        android:title="Filter"
+        app:showAsAction="always"
+        android:orderInCategory="1">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/checkboxAllDrinks"
+                    android:title="All Drinks" />
+                <item android:id="@+id/checkboxNonAlc"
+                    android:title="Non-Alcoholic Drinks" />
+                <item android:id="@+id/checkboxVodka"
+                    android:title="Vodka" />
+                <item android:id="@+id/checkboxRum"
+                    android:title="Rum" />
+                <item android:id="@+id/checkboxTequila"
+                    android:title="Tequila" />
+                <item android:id="@+id/checkboxWhiskey"
+                    android:title="Whiskey" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView" android:orderInCategory="2" />
+</menu>

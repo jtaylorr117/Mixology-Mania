@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Mixology Mania</string>
+    <string name="welcome_screen_title_logo">welcome screen title logo</string>
+    <string name="title_at_top">title at top</string>
+    <string name="recipes">RECIPES</string>
+    <string name="levels">Levels</string>
+    <string name="play">PLAY</string>
+    <string name="placeholder">placeholder</string>
+    <string name="settings">SETTINGS</string>
+    <string name="about_us">ABOUT US</string>
+    <string name="green_bottle">Green bottle</string>
+    <string name="stack_of_olives">stack of olives</string>
+    <string name="salt_shaker">salt shaker</string>
+    <string name="glass_of_wine">glass of wine</string>
+    <string name="martini_shaker">martini shaker</string>
+    <string name="need_help">NEED HELP?</string>
+    <string name="help">HELP</string>
+    <string name="help_caps">HELP!</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_t_e_s_t">TEST</string>
+    =======
+    <string name="about_ustxt">ABOUT US!</string>
+    <string name="about_us_title">About US</string>
+    <string name="about_us_blurb">MIXOLOGY MANIA was created to help aspiring at-home mixologists learn the magic of mixology. </string>
+    <string name="abtus_blurb2">Explore our recipes!</string>
+    <string name="dev_by">Developed by: John Taylor, Natalie Garcia, and Storm Katzman</string>
+    <string name="submit">Submit</string>
+    <string name="your_message">Your Message...</string>
+    <string name="phone">Phone...</string>
+    <string name="email">Email...</string>
+    <string name="name">Name...</string>
+    <string name="drink_name">Drink Name</string>
+    <string name="title_activity_make_drink">make_drink</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_select_drink_to_make">select_drink_to_make</string>
+    <string name="highball_glass_description">An image of an empty highball glass</string>
+</resources>

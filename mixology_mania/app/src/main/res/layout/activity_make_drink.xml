@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/make_drink_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow_bg"
+    tools:context=".make_drink">
+
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ImageView
+        android:id="@+id/highballGlassImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="145dp"
+        android:contentDescription="@string/highball_glass_description"
+        app:srcCompat="@drawable/empty_highball_glass" />
+
+    <TextView
+        android:id="@+id/tv_instruction_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="104dp"
+        android:text="PLACEHOLDER TEXT"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_instruction_text"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="42dp"
+        android:text="Start"/>
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="99dp"
+        android:layout_height="44dp"
+        android:layout_alignTop="@+id/tv_instruction_text"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="42dp"
+        android:text="Go Home" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:columnCount="3"
+        android:rowCount="1"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/ingredient1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/lime_slice"
+            android:layout_margin="10sp"/>
+
+        <ImageView
+            android:id="@+id/ingredient2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/lime_slice"
+            android:layout_margin="10sp"/>
+
+        <ImageView
+            android:id="@+id/ingredient3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/lime_slice"
+            android:layout_margin="10sp"/>
+
+        <ImageView
+            android:id="@+id/ingredient4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/lime_slice"
+            android:layout_margin="10sp"/>
+
+        <ImageView
+            android:id="@+id/ingredient5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/lime_slice"
+            android:layout_margin="10sp"/>
+
+        <ImageView
+            android:id="@+id/ingredient6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/lime_slice"
+            android:layout_margin="10sp"/>
+
+        <ImageView
+            android:id="@+id/ingredient7"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/lime_slice"
+            android:layout_margin="10sp"/>
+
+        <ImageView
+            android:id="@+id/ingredient8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/lime_slice"
+            android:layout_margin="10sp"/>
+
+        <ImageView
+            android:id="@+id/ingredient9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/lime_slice"
+            android:layout_margin="10sp"/>
+    </GridLayout>
+</RelativeLayout>

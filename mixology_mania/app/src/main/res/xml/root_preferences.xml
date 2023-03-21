@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="General Settings">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="Alc"
+            android:summary="See only recipes without alcohol in them"
+            android:title="Enable Non-Alcoholic Mode" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Enable Night Mode">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="NIGHT"
+            android:summaryOff="Night mode is off"
+            android:summaryOn="Night mode is on"
+            android:title="Night Mode" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Audio Settings">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="attachment"
+            android:summaryOff="App audio is on"
+            android:summaryOn="App audio is muted"
+            android:title="Mute Music &amp; Game Audio" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mixologymania">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MixologyMania">
+        <activity
+            android:name=".select_drink_to_make"
+            android:label="Choose a drink!"
+            android:theme="@style/Theme.MixologyMania.NoActionBar"
+            android:parentActivityName=".home_screen"/>
+        <activity
+            android:name=".make_drink"
+            android:label="Drink Making"
+            android:parentActivityName=".select_drink_to_make"
+            android:theme="@style/Theme.MixologyMania.NoActionBar" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settings"
+            android:parentActivityName=".home_screen" />
+        <activity android:name=".about_us_screen" />
+        <activity android:name=".help_screen" />
+        <activity
+            android:name=".RecipeListScreen"
+            android:label="Recipe List"
+            android:parentActivityName=".home_screen" />
+        <activity
+            android:name=".Recipe_Selected"
+            android:label="@string/drink_name"
+            android:parentActivityName=".RecipeListScreen" />
+        <activity android:name=".not_legal_drinking_age" />
+        <activity android:name=".home_screen" />
+        <activity android:name=".WelcomeScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
